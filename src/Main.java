@@ -1,15 +1,85 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Задача №1");
+//Объявите три массива:
+//Целочисленный массив, заполненный тремя цифрами — 1, 2 и 3 — с помощью ключевого слова new
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        int [] one = new int[3];
+        one [0] = 1;
+        one [1] = 2;
+        one [2] = 3;
+//Массив, в котором можно хранить три дробных числа — 1.57, 7.654, 9.986.
+//Массив сразу заполните значениями.
+
+        float [] two = {1.57F,7.654F,9.986F};
+//Произвольный массив. Тип и количество данных определите сами. Самостоятельно выберите способ создания массива:
+//с помощью ключевого слова или сразу заполненный элементами.
+
+        int [] three = {0,1};
+
+        System.out.println("Задача №2");
+//Распечатайте на отдельной строчке элементы каждого массива по порядку через запятую.
+//В конце строки запятую ставить не надо.
+    for (int i =0; i< one.length;i++){
+        System.out.print(one[i]);
+    if (i!= one.length-1){
+        System.out.print(", ");
+    }
+}
+        System.out.println( );
+
+    for (int i =0; i< two.length;i++){
+        System.out.print(two[i]);
+        if (i!= two.length-1){
+            System.out.print(", ");
         }
+    }
+        System.out.println( );
+    for (int i =0; i< three.length;i++){
+            System.out.print(three[i]);
+            if (i!= three.length-1){
+                System.out.print(", ");
+            }
+        }
+        System.out.println( );
+
+
+        System.out.println("Задача №3");
+//Распечатайте на отдельной строчке элементы каждого массива в обратном порядке через запятую.
+//В конце строки запятую ставить не надо.
+
+        for (int i = one.length-1; i>=0; i-- ) {
+            System.out.print(one[i]);
+            if (i!= 0){
+                System.out.print(", ");
+            }
+        }
+        System.out.println( );
+        for (int i = two.length-1; i>=0; i-- ) {
+            System.out.print(two[i]);
+            if (i!= 0){
+                System.out.print(", ");}
+        }
+        System.out.println();
+        for (int i = three.length-1; i>=0; i-- ) {
+            System.out.print(three[i]);
+            if (i!= 0){
+                System.out.print(", ");}
+        }
+        System.out.println();
+        System.out.println("Задача №4");
+//Пройдитесь по первому целочисленному массиву и все нечетные числа в нем сделайте четными (нужно прибавить 1).
+//Важно: код должен работать с любым целочисленным массивом, поэтому для решения задания используйте циклы.
+//Распечатайте результат преобразования в консоль.
+for (int i =0; i< one.length; i++){
+    if (one[i]%2!=0)
+    one[i]+=1;
+    System.out.println(one[i]);
+}
+
     }
 }
