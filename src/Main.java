@@ -24,25 +24,51 @@ public class Main {
         System.out.println("Задача №2");
 //Распечатайте на отдельной строчке элементы каждого массива по порядку через запятую.
 //В конце строки запятую ставить не надо.
+    for (int i =0; i< one.length;i++){
+        System.out.print(one[i]);
+    if (i!= one.length-1){
+        System.out.print(", ");
+    }
+}
+        System.out.println( );
 
-        System.out.println(Arrays.toString(one));
-        System.out.println(Arrays.toString(two));
-        System.out.println(Arrays.toString(three));
+    for (int i =0; i< two.length;i++){
+        System.out.print(two[i]);
+        if (i!= two.length-1){
+            System.out.print(", ");
+        }
+    }
+        System.out.println( );
+    for (int i =0; i< three.length;i++){
+            System.out.print(three[i]);
+            if (i!= three.length-1){
+                System.out.print(", ");
+            }
+        }
+        System.out.println( );
+
 
         System.out.println("Задача №3");
 //Распечатайте на отдельной строчке элементы каждого массива в обратном порядке через запятую.
 //В конце строки запятую ставить не надо.
 
         for (int i = one.length-1; i>=0; i-- ) {
-            System.out.print(", " +one[i]);
+            System.out.print(one[i]);
+            if (i!= 0){
+                System.out.print(", ");
+            }
         }
         System.out.println( );
         for (int i = two.length-1; i>=0; i-- ) {
-            System.out.print(", "+two[i]);
+            System.out.print(two[i]);
+            if (i!= 0){
+                System.out.print(", ");}
         }
         System.out.println();
         for (int i = three.length-1; i>=0; i-- ) {
-            System.out.print(", "+three[i]);
+            System.out.print(three[i]);
+            if (i!= 0){
+                System.out.print(", ");}
         }
         System.out.println();
         System.out.println("Задача №4");
